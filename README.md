@@ -4,6 +4,10 @@ description: 本插件是延伸 ELDependenci 的 SQL 框架。
 
 # 歡迎使用 ELDependenci-SQL
 
+{% hint style="warning" %}
+如發現 wiki 加載緩慢，你可到 [github](https://github.com/ELDEpendenci/eldependenci-sql-docs/blob/master/SUMMARY.md) 直接查看 md 文件。
+{% endhint %}
+
 {% hint style="info" %}
 本框架為 [ELDependenci](https://eric2788.gitbook.io/eldependenci/) 的延伸 SQL 框架。
 {% endhint %}
