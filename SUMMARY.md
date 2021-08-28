@@ -23,3 +23,9 @@
 * [下載](https://github.com/ELDEpendenci/ELDependenci-sql/releases)
 * [Javadoc 文件](https://eldependenci.github.io/ELDependenci-sql/)
 
+## 聯絡我們 <a id="lian-lao-wo-men"></a>
+
+---
+
+* [Discord](https://discord.gg/S5HNtQqzXe)
+
