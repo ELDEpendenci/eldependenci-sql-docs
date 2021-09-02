@@ -5,7 +5,7 @@ description: 本頁將簡單介紹使用 Jpa Repository 的方式
 # 使用 JPA Repository
 
 {% hint style="info" %}
-JPA Repository 方式是由 Spring Data JPA 基於 hibernate 建置的更方便進行 sql 操作的 api。因此，其註冊方式是跟 Hibernate 的註冊方式相同的。關於 Hibernate 的註冊方式請細閱上頁的 [使用Hibernate](../shi-yong-hibernate.md) 。
+JPA Repository 方式是由 Spring Data JPA 基於 hibernate 建置的更方便進行 sql 操作的 api。因此，其註冊方式是跟 Hibernate 的註冊方式相同的。關於 Hibernate 的註冊方式請細閱上頁的 [使用Hibernate](../hibernate.md) 。
 {% endhint %}
 
 根據 Hibernate 所註冊的方式完成後，你需要先創建一個 interface , 並繼承  `JpaRepository<Entity, ID>`。
