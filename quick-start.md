@@ -2,6 +2,19 @@
 
 假若你使用 Maven，則添加以下的依賴:
 
+{% hint style="info" %}
+本框架採用 [github packages](https://github.com/orgs/ELDEpendenci/packages) 作為 maven 庫。你可以在 [這裏 ](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#installing-a-package)進一步了解如何掛接。
+{% endhint %}
+
+```xml
+<repositories>
+    <repository>
+        <id>eld</id>
+        <url>https://maven.pkg.github.com/ELDependenci/eldependenci-sql</url>
+    </repository>
+</repositories>
+```
+
 ```markup
 <dependency>
      <groupId>org.eldependenci</groupId>
@@ -76,4 +89,3 @@ mysql:
 ```
 
 修改完畢後，放入你的插件並重啟伺服器，便能完成掛接使用了。
-
