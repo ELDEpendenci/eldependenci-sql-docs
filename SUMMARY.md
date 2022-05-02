@@ -6,12 +6,12 @@
 ## 詳細教程
 
 * [配置文件](xiang-xi-jiao-cheng/config.md)
+* [安裝自定義的數據源](xiang-xi-jiao-cheng/an-zhuang-zi-ding-yi-de-shu-ju-yuan.md)
 * [使用方式](xiang-xi-jiao-cheng/usage/README.md)
   * [傳統使用方式](xiang-xi-jiao-cheng/usage/traditional.md)
   * [使用 Hibernate](xiang-xi-jiao-cheng/usage/hibernate.md)
   * [使用 JPA Repository](xiang-xi-jiao-cheng/usage/jpa-repository/README.md)
     * [新增自建方法](xiang-xi-jiao-cheng/usage/jpa-repository/build-own-method.md)
-  * [安裝自定義的數據源](xiang-xi-jiao-cheng/usage/an-zhuang-zi-ding-yi-de-shu-ju-yuan.md)
 
 ## 其他參考 <a href="#references" id="references"></a>
 
