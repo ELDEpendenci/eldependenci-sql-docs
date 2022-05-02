@@ -42,3 +42,7 @@ mysql:
         sqlInstallation.injectDataSource(dataSource, MySQL8Dialect.class);
     }
 ```
+
+{% hint style="info" %}
+有關 `Dialect` 的類型詳細可到[這裏](https://javabydeveloper.com/what-is-dialect-in-hibernate-and-list-of-dialects/)查看。
+{% endhint %}
