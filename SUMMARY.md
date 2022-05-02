@@ -3,15 +3,15 @@
 * [歡迎使用 ELDependenci-SQL](README.md)
 * [快速開始](quick-start.md)
 
-## 詳細教程
+## 詳細教程 <a href="#details" id="details"></a>
 
-* [配置文件](xiang-xi-jiao-cheng/config.md)
-* [安裝自定義的數據源](xiang-xi-jiao-cheng/an-zhuang-zi-ding-yi-de-shu-ju-yuan.md)
-* [使用方式](xiang-xi-jiao-cheng/usage/README.md)
-  * [傳統使用方式](xiang-xi-jiao-cheng/usage/traditional.md)
-  * [使用 Hibernate](xiang-xi-jiao-cheng/usage/hibernate.md)
-  * [使用 JPA Repository](xiang-xi-jiao-cheng/usage/jpa-repository/README.md)
-    * [新增自建方法](xiang-xi-jiao-cheng/usage/jpa-repository/build-own-method.md)
+* [配置文件](details/config.md)
+* [安裝自定義的數據源](details/custom-install-datasource.md)
+* [使用方式](details/usage/README.md)
+  * [傳統使用方式](details/usage/traditional.md)
+  * [使用 Hibernate](details/usage/hibernate.md)
+  * [使用 JPA Repository](details/usage/jpa-repository/README.md)
+    * [新增自建方法](details/usage/jpa-repository/build-own-method.md)
 
 ## 其他參考 <a href="#references" id="references"></a>
 

@@ -59,7 +59,7 @@ public class ELDTester extends ELDBukkitPlugin {
 }
 ```
 
-## 開始使用服務
+## 開始使用服務 <a href="#starttouse" id="starttouse"></a>
 
 與傳統方式不同的是，這次將注入 `Provider<EntityManager>`  以使用 Hibernate ORM。
 
@@ -113,4 +113,3 @@ public class UserEMService implements UserService {
 {% endhint %}
 
 關於 EntityManager 的更多詳細教學可參考[這裏](https://openhome.cc/Gossip/EJB3Gossip/EntityManager.html)。
-
