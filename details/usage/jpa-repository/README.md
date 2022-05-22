@@ -20,15 +20,8 @@ public interface UserRepository extends JpaRepository<User, String> {
 完成後，你需要到主類註冊你的 `Repository`。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
 
         SQLInstallation sql = serviceCollection.getInstallation(SQLInstallation.class);
 
@@ -36,12 +29,6 @@ public class ELDTester extends ELDBukkitPlugin {
         sql.bindJpaRepository(UserRepository.class); // 註冊 Repository
 
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 ## 使用服務
@@ -88,6 +75,4 @@ public class UserJpaService implements UserService {
 
 其他有關更多 Spring Data JPA 的詳細教學可參閱[這裏](https://docs.spring.io/spring-data/jpa/docs/2.5.3/reference/html/#jpa.query-methods)。
 {% endhint %}
-
-
 

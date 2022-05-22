@@ -35,7 +35,7 @@ mysql:
 
 ```java
     @Override
-    protected void bindServices(ServiceCollection collection) {
+    public void bindServices(ServiceCollection collection) {
         SQLInstallation sqlInstallation = collection.getInstallation(SQLInstallation.class);
         DataSource dataSource = ... // 獲取你的數據源
         // 請設置與 DataSource 類型一致的 Dialect 類型，這邊以自定義的 MySQL 數據源為例

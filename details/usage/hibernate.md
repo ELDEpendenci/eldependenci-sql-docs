@@ -38,25 +38,12 @@ public class User {
 完成後，到主類獲取本插件的安裝器 `SQLInstallation.class` 並註冊你的 table class。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
         // 獲取安裝器
         SQLInstallation sql = serviceCollection.getInstallation(SQLInstallation.class);
         sql.bindEntities(User.class);
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 ## 開始使用服務 <a href="#starttouse" id="starttouse"></a>

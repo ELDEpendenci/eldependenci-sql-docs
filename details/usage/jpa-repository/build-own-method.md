@@ -21,7 +21,7 @@ public interface UserRepository extends JpaRepository<User, String> {
 更多的格式和寫法其實在 Spring Data JPA documentation 中已有提供，本頁便不多敘述。
 
 {% hint style="info" %}
-[Spring Data JPA 文件](https://docs.spring.io/spring-data/jpa/docs/2.5.3/reference/html/#jpa.query-methods)中第 6.3.2 部分擁有查詢的格式寫法列表。 
+[Spring Data JPA 文件](https://docs.spring.io/spring-data/jpa/docs/2.5.3/reference/html/#jpa.query-methods)中第 6.3.2 部分擁有查詢的格式寫法列表。&#x20;
 {% endhint %}
 
 ## 自建擴展實作
@@ -87,15 +87,8 @@ public interface UserRepository extends JpaRepository<User, String>, CustomARepo
 最後，到主類註冊。這次註冊將會添加 自建實作擴展的 class。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
 
         SQLInstallation sql = serviceCollection.getInstallation(SQLInstallation.class);
 
@@ -104,12 +97,6 @@ public class ELDTester extends ELDBukkitPlugin {
         sql.bindJpaRepository(UserRepository.class, CustomARepoImpl.class, CustomBRepoImpl.class);
 
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 ### 使用
@@ -154,4 +141,3 @@ public class UserJpaService implements UserService {
 {% hint style="info" %}
 你可創建無限多個的擴展實作。
 {% endhint %}
-
